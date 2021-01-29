@@ -1,3 +1,7 @@
-import config.Config as Config
+from FirstRec001.src.Config import Config
 
-print(Config.trainset_json)
+with open(Config.file_paths[0], 'r') as f:
+    line = f.readlines()[0]
+    print(line)
+    print('end')
+    print('end')
